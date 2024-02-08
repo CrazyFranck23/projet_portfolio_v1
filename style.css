@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+}
+
+div.cover {
+    background: url(ressource/cover.jpg);
+    height: 360px;
+}
