@@ -1,13 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {     /* Definition de variable en CSS */
     --color1: #D89584; /* Vu que c'est une couleur que j'utilise a plusieurs endroits */
+    --color2: #F4F4F4;
 }
 
 body {
     margin: 0;
     font-family: Arial;
+    line-height: 1.5;
 }
 
-div.cover {
+/* COUVERTURE */
+
+section.cover {
     background: url(ressource/cover_overlay.png) no-repeat center/100% 100%, url(ressource/cover.jpg) no-repeat center/cover;
     /* ## La première image séra la plus proche du user, puis la 2ème derrière et ainsi de suite */
     /* 
@@ -68,6 +76,10 @@ h1 {
     font-size: 14px;
 }
 
+.align-button {
+    text-align: center;
+}
+
 a.contact-button {
     color: var(--color1);
     border: 3px solid var(--color1);
@@ -82,4 +94,117 @@ a.contact-button {
 a.contact-button:hover {
     color: white;
     border: 3px solid white;
+}
+
+/* SECTION GRISE 1 */
+
+.section {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+
+section.section-grise1 {
+    background: url(ressource/triangle2white.svg) no-repeat center bottom/100%;
+    background-color: var(--color2);
+    padding-bottom: 70px;
+}
+
+section.section-grise2 {
+    background: url(ressource/triangle1white.svg) no-repeat center top/100%;
+    background-color: var(--color2);
+    padding-top: 80px;
+}
+
+/* EN SAVOIR PLUS */
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0;
+}
+
+.separateur {
+    height: 1px;
+    width: 150px;
+    background-color: #979797;
+    /* margin: 0 auto; ## Pour centrer aussi */
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+}
+
+.section-grise1 p {
+    font-size: 22px;
+    text-align: center;
+    color: #656565;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.col40 {
+    width: 40%;
+}
+
+.col60 {
+    width: 60%;
+}
+
+.float-right {
+    float: right;
+}
+
+.description {
+    padding-left: 16px; /* Pour que le padding soit pris en compte dans les 60%, j'ajoute le box-sizing (voir CSS plus haut *) */
+}
+
+div.text-avec-ligne-verticale {
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.text-avec-ligne-verticale p {
+    margin-top: 0;
+}
+
+/* PORTFOLIO */
+
+div.barre-verticale {
+    height: 50px;
+    width: 4px;
+    background-color: var(--color1);
+    margin-right: 8px;
+}
+
+.col-portfolio {
+    width: 47%;
+}
+
+.table1 {
+    display: inline-block;
+}
+
+/* FRAME */
+
+section.frame {
+    margin: 30px 50px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+p.frame-title {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
 }
