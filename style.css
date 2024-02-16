@@ -97,6 +97,12 @@ a.contact-button {
     font-size: 14px;
 }
 
+a.contact-button_portfolio {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+
 a.contact-button:hover {
     color: white;
     border: 3px solid white;
@@ -215,6 +221,14 @@ p.frame-title {
     text-align: center;
 }
 
+section.frame img {
+    width: 100px;
+}
+
+.display-mobile {
+    display: none;
+}
+
 /* PAGE PORTFOLIO */
 
 .portfolio-header {
@@ -235,12 +249,6 @@ p.frame-title {
     margin-left: 16px;
     margin-top: 22px;
     height: 45px;
-}
-
-.portfolio-header a {
-    position: absolute;
-    right: 20px;
-    top: 5px;
 }
 
 .portfolio-back {
@@ -265,7 +273,7 @@ h2.portfolio {
 }
 
 .portfolio-separateur {
-    margin-top: -12px;
+    margin-bottom: 15px;
 }
 
 .center-image {
@@ -275,10 +283,108 @@ h2.portfolio {
 
 img.portfolio {
     width: 70%;
-    max-width: 550px;
+    max-width: 475px;
 }
 
 .center-image a {
     display: block;
     margin-top: 8px;
+}
+
+/* RESPONSIVE DESIGN : MOBILE */
+
+@media only screen and (max-width: 767px) {
+    img.cover-profile {
+        height: 90px;
+        margin-top: 75px;
+    }
+    
+    h1 {
+        font-size: 38px;
+        margin-top: 6px;
+        margin-bottom: 0px;
+    }
+    
+    .cover p {
+        margin-top: 2px;
+        font-size: 13px;
+    }
+
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section.section-grise1 {
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .col40 {
+        width: 100%;
+    }
+    
+    .col60 {
+        width: 100%;
+    }
+
+    .col-portfolio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    section.frame {
+        margin: 0px 0px;
+        padding: 0px 0px;
+        box-shadow: none;
+    }
+
+    section.frame img {
+        width: 70px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    /* PORTFOLIO - MOBILE */
+    .portfolio-header-title {
+        font-size: 19px;
+        padding-top: 10px;
+        padding-left: 4px;
+    }
+
+    a.contact-button {
+        padding: 7px 12px;
+        margin-top: 22px;
+        font-size: 12px;
+    }
+
+    a.contact-button-portfolio {
+        right: 8px;
+    }
+
+    h1.portfolio {
+        font-size: 40px;
+    }
+
+    h2.portfolio {
+        font-size: 22px;
+    }
+    
+    img.portfolio {
+        width: 100%;
+    }
+
+    .display-mobile {
+        display: block;
+    }
 }
