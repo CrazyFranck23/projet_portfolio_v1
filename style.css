@@ -208,3 +208,71 @@ p.frame-title {
     margin-bottom: 20px;
     text-align: center;
 }
+
+/* PAGE PORTFOLIO */
+
+.portfolio-header {
+    background: url(ressource/header.jpg) no-repeat center/cover;
+    height: 90px;
+    position: relative;
+}
+
+.portfolio-header-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    padding-top: 4px;
+    padding-left: 8px;
+}
+
+.portfolio-header div {
+    margin-left: 16px;
+    margin-top: 22px;
+    height: 45px;
+}
+
+.portfolio-header a {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+
+.portfolio-back {
+    color: var(--color1);
+    margin-left: -10px;
+}
+
+h1.portfolio {
+    font-size: 46px;
+    color: black;
+}
+
+h2.portfolio {
+    font-size: 26px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 0;
+}
+
+.portfolio-section-grise1 {
+    padding-top: 20px;
+}
+
+.portfolio-separateur {
+    margin-top: -12px;
+}
+
+.center-image {
+    text-align: center;
+    margin-top: 3Opx;
+}
+
+img.portfolio {
+    width: 70%;
+    max-width: 550px;
+}
+
+.center-image a {
+    display: block;
+    margin-top: 8px;
+}
